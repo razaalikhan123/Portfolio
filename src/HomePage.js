@@ -1,12 +1,11 @@
-// src/components/HomePage.js
 import React, { useState, useEffect } from 'react';
 import ProjectsSection from './ProjectsSection';
 import SkillsSection from './SkillsSection';
 import ContactSection from './ContactSection';
 import Education from './education';
 import Experience from './experience';
-import './HomePage.css'; // Import the CSS file
-import myPicture from './raza.jpg';
+import './HomePage.css'; 
+import myPicture from './r2.jpg';
 import pdf from './Raza-cv.pdf'
 
 const roles = ['Games app', 'Web Page', 'UI/UX web', 'Applications'];
@@ -26,30 +25,28 @@ const HomePage = () => {
   const [index, setIndex] = useState(0);
   const [isShuffling, setIsShuffling] = useState(false);
 
-  // Effect to handle typing out the text
+
   useEffect(() => {
     if (index < finalText.length) {
       const timer = setTimeout(() => {
         setText((prev) => prev + finalText[index]);
         setIndex(index + 1);
-      }, 200); // Adjust the speed here
+      }, 200); 
       return () => clearTimeout(timer);
     } else {
-      // Start shuffling after 5 seconds
+    
       setTimeout(() => {
         setIsShuffling(true);
       }, 5000);
     }
   }, [index, finalText]);
 
-  // Effect to handle shuffling and resetting the text
   useEffect(() => {
     if (isShuffling) {
       const shuffleTimer = setInterval(() => {
         setShuffledText(shuffleArray(finalText.split('')));
-      }, 100); // Adjust the shuffle speed here
+      }, 100); 
 
-      // Stop shuffling after 3 seconds, then reset the text
       const stopShufflingTimer = setTimeout(() => {
         clearInterval(shuffleTimer);
         setText('');
@@ -66,11 +63,11 @@ const HomePage = () => {
     }
   }, [isShuffling, finalText, roleIndex]);
 
-  // Function to download the resume
+ 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = pdf; // Correct relative path
-    link.download = 'Raza-cv.pdf'; // The name the file will have after download
+    link.href = pdf; 
+    link.download = 'Raza-resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -79,21 +76,22 @@ const HomePage = () => {
   return (
     <div style={{ marginTop: '50px' }}>
       <section id="welcome" className="welcome-section">
-        <img src={myPicture} alt="My Portrait" className='pic' /> {/* Adjust the size as needed */}
+        <img src={myPicture} alt="My Portrait" className='pic' /> 
         <div>
-          <h1 style={{ color: '#FFFFFF' }}><strong>Welcome to My Portfolio</strong></h1>
-          <h3 style={{ color: '#FFFFFF' }}><strong>Hi, my name is Raza Ali Khan.</strong></h3>
-          <h4 style={{ color: '#FFFFFF' }}><strong>I develop and design {` `}
+          <h1 style={{ color: '#FFFFFF' }}><strong> Welcome to My Portfolio</strong></h1>
+          <h3 style={{ color: '#FFFFFF' }}><strong>Hi Developers, My name is Raza Ali khan.</strong></h3>
+          <h4 style={{ color: '#FFFFFF' }}><strong>I specialize in developing and designing dynamic {` `}
             <span className="shuffled-text">
               <strong>{text}</strong>
               {shuffledText.slice(text.length).join('')}
             </span>
           </strong></h4>
           <div className='par'>
-            Entry-level IT professional with software development experience and proficiency in HTML, CSS,
-            JavaScript, PHP, C++, and Java. Skilled in frameworks like React.js and .NET Framework, with expertise in
-            SQL Server and Oracle databases. Strong problem-solving and communication abilities, with proven
-            success in collaborative team environments.
+          I am an entry-level IT professional with software development experience and proficiency in HTML, CSS,
+JavaScript, PHP, C++, and Java. Skilled in frameworks like React.js and .NET Framework, with expertise in
+SQL Server and Oracle databases. Strong problem-solving and communication abilities, with proven
+success in collaborative team environments.
+
             </div>
             <button className='butt' onClick={downloadResume}>
               Download Resume

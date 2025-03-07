@@ -68,7 +68,7 @@ const Education = () => {
             <h2>College</h2>
             <div className="date">2019 - 2021</div>
             <ul>
-              <li><strong>Institution:</strong> Aisha Bawany College</li>
+              <li><strong>Institution:</strong>Aisha Bawany College </li>
             </ul>
           </div>
         </div>

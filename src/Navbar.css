@@ -1,9 +1,6 @@
-/* src/components/Navbar.css */
-
-/* Set a vibrant gradient background */
 .navbar {
-    background: linear-gradient(90deg, #21012b, #0a0005);
-    border-bottom: 2px solid #e169ff;
+    background: linear-gradient(90deg, #050516 , #0b0b30);
+    border-bottom: 2px solid #1c7396;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 80px;
   }
@@ -40,21 +37,21 @@
   }
   
   .nav-link:hover {
-    color: #fa69ff !important;
+    color: #69b5be !important;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
   }
   
   
   .nav-link.active {
-    color: #fa69ff !important;
+    color: #69b5be !important;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
   }
   
  
   .navbar-toggler {
-    border-color: #fa69ff !important;
+    border-color: #69b5be !important;
   }
   
 

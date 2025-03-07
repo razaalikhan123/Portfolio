@@ -4,20 +4,22 @@ import ProjectModal from './ProjectModal';
 import './experience.css';
 import p1 from './faysal cert.png';
 import image2 from './spacex cert.png';
+import image3 from './paysys cert.png';
 
 const exp = [
   {
-    name: 'Faysal Bank',
-    description: 'I interned in IT GRC at Faysal Bank, assisting with governance, risk, and compliance tasks, including audits and risk assessments, while ensuring IT regulatory adherence.',
+    name: 'WEB DEVELOPMENT- INTERN @ XPSACE TECHNOLOGIES',
+    description: 'Explored HTML, CSS and ReactJs detail.Implemented my learnings by making My portfolio and Online learning platform by using ReactJsand realted technologies on detail.',
+    duration: 'Feb 2024 - March 2024',
+    image: image2,
+  },
+  {
+    name: 'IT GRC- INTERN @ FAYSAL BANK LIMITED',
+    description: 'Explored ISO27001, PCIDSS, Information Security Deployment in bank.Implemented my learnings by Taking part in INternal Audit of Bank , Deployment of encryption indatabase of Bank.',
     duration: 'Aug 2024 - Sep 2024',
     image: p1,
   },
-  {
-    name: 'Xpace Technologies',
-    description: 'I worked as a remote React intern at Xpace Technology, where I contributed to building and optimizing user interfaces for web applications',
-    duration: 'May 2024 - July 2024',
-    image: image2,
-  },
+
   // Add more projects here
 ];
 

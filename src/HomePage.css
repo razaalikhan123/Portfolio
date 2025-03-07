@@ -57,7 +57,7 @@ border-radius: 50%;
    }
 
    .butt:hover {
-    color: #360eeb; /* Change text color on hover */
+    color: #96c2e6; /* Change text color on hover */
   }
 @keyframes fadeIn {
   0% {
@@ -142,6 +142,7 @@ font-family: Arial, sans-serif; /* Set a default font */
 @media (max-width: 480px) {
 .welcome-section h1 {
     font-size: 1.5rem; /* Further reduce font size */
+    
 }
 
 .par {

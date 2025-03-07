@@ -95,6 +95,7 @@
 .project-info h2 {
   margin: 0;
   font-size: 2em; /* Default font size */
+  color: rgb(32, 100, 63);
 }
 
 .project-info h4 {
