@@ -6,7 +6,7 @@ import Education from './education';
 import Experience from './experience';
 import Reveal from './Reveal';
 import './HomePage.css';
-import myPicture from './r2.jpg';
+import myPicture from './r2.jpeg';
 import pdf from './Raza-cv.pdf';
 
 const roles = ['IT Governance', 'Technology Risk', 'Information Security', 'Regulatory Compliance'];
@@ -121,11 +121,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <Education />
-      <ProjectsSection />
-      <Experience />
-      <SkillsSection />
-      <ContactSection />
+
     </div>
   );
 };

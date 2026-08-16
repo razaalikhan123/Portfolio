@@ -1,17 +1,17 @@
-// src/components/Navbar.js
+// src/Navbar.js
+
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import './Navbar.css';
-import profilePic from './r2.jpg';
+import profilePic from './r2.jpeg';
 
 const links = [
-  { to: '/', label: 'Home' },
-  { to: '/education', label: 'Education' },
-  { to: '/projects', label: 'Projects' },
-  { to: '/experience', label: 'Experience' },
-  { to: '/skills', label: 'Skills' },
-  { to: '/contact', label: 'Contact' },
+  { href: '#home', label: 'Home' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 const NavigationBar = () => {
@@ -19,46 +19,103 @@ const NavigationBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 12);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 12);
+    };
+
     handleScroll();
+
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
+  const handleNavClick = (href) => {
+    setExpanded(false);
+
+    const element = document.querySelector(href);
+
+    if (element) {
+      const navbarHeight = 70;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top: elementPosition - navbarHeight,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <Navbar
       bg="dark"
       variant="dark"
       expand="lg"
-      sticky="top"
+      fixed="top"
       expanded={expanded}
       onToggle={setExpanded}
       className={`navbar ${scrolled ? 'is-scrolled' : ''}`}
     >
       <Container>
-        <LinkContainer to="/" onClick={() => setExpanded(false)}>
-          <Navbar.Brand className="navbar-brand">
-            <img src={profilePic} alt="Raza Ali Khan" className="navbar-brand-img" />
-            <span className="navbar-brand-text">
-              <span className="navbar-brand-name">Raza Ali Khan</span>
-              <span className="navbar-brand-role">IT Governance &amp; Risk</span>
-            </span>
-          </Navbar.Brand>
-        </LinkContainer>
 
-        <Navbar.Toggle aria-controls="main-navigation" aria-label="Toggle navigation menu" />
+        {/* Brand */}
+        <Navbar.Brand
+          className="navbar-brand"
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault();
+            handleNavClick('#home');
+          }}
+        >
+          <img
+            src={profilePic}
+            alt="Raza Ali Khan"
+            className="navbar-brand-img"
+          />
+
+          <span className="navbar-brand-text">
+            <span className="navbar-brand-name">
+              Raza Ali Khan
+            </span>
+
+            <span className="navbar-brand-role">
+              IT Governance &amp; Risk
+            </span>
+          </span>
+        </Navbar.Brand>
+
+        {/* Mobile menu button */}
+        <Navbar.Toggle
+          aria-controls="main-navigation"
+          aria-label="Toggle navigation menu"
+        />
+
+        {/* Navigation */}
         <Navbar.Collapse id="main-navigation">
           <Nav className="navcus ms-auto">
+
             {links.map((link) => (
-              <LinkContainer key={link.to} to={link.to} onClick={() => setExpanded(false)}>
-                <Nav.Link>{link.label}</Nav.Link>
-              </LinkContainer>
+              <Nav.Link
+                key={link.href}
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link.href);
+                }}
+              >
+                {link.label}
+              </Nav.Link>
             ))}
+
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
 };
 
-export default NavigationBar;
+export default NavigationBar; 

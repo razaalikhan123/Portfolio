@@ -1,38 +1,75 @@
 // src/App.js
+
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavigationBar from './Navbar';
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Components
+import NavigationBar from './Navbar';
 import HomePage from './HomePage';
+import Experience from './experience';
+import ProjectsSection from './ProjectsSection';
+import Education from './education';
+import SkillsSection from './SkillsSection';
+import ContactSection from './ContactSection';
+
 import ScrollIndicator from './ScrollIndicator';
 import BackgroundFX from './BackgroundFX';
 import SideRails from './SideRails';
 
-import ProjectsSection from './ProjectsSection';
-import SkillsSection from './SkillsSection';
-import ContactSection from './ContactSection';
-import Education from './education';
-import Experience from './experience';
-
 function App() {
   return (
     <div className="App">
-      <BackgroundFX />
-      <Router>
-        <NavigationBar />
-        <Routes>
-          <Route className="App" path="/" element={<HomePage />} />
-          <Route className="App" path="/projects" element={<ProjectsSection />} />
-          <Route path="/experience" element={<Experience />} />
 
-          <Route path="/skills" element={<SkillsSection />} />
-          <Route path="/contact" element={<ContactSection />} />
-          <Route path="/education" element={<Education />} />
-        </Routes>
+      {/* Background effects */}
+      <BackgroundFX />
+
+      <Router>
+
+        {/* Navigation */}
+        <NavigationBar />
+
+        {/* =========================
+            PORTFOLIO SECTIONS
+            ========================= */}
+
+        {/* 1. HOME */}
+        <section id="home">
+          <HomePage />
+        </section>
+
+        {/* 2. EXPERIENCE */}
+        <section id="experience">
+          <Experience />
+        </section>
+
+        {/* 3. PROJECTS */}
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+
+        {/* 4. EDUCATION */}
+        <section id="education">
+          <Education />
+        </section>
+
+        {/* 5. SKILLS */}
+        <section id="skills">
+          <SkillsSection />
+        </section>
+
+        {/* 6. CONTACT */}
+        <section id="contact">
+          <ContactSection />
+        </section>
+
       </Router>
+
+      {/* Side UI */}
       <ScrollIndicator />
       <SideRails />
+
     </div>
   );
 }

@@ -6,7 +6,7 @@ import './contact.css';
 const socialLinks = [
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/raxa_anu/?igsh=MWpnaWloaThucHhnYg%3D%3D',
+    href: 'https://www.instagram.com/razakhan_0_1/?igsh=MWpnaWloaThucHhnYg%3D%3D',
     icon: <FaInstagram />,
   },
   {
