@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.043dcced.css",
+    "main.js": "/static/js/main.d99c06f8.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/Raza-cv.pdf": "/static/media/Raza-cv.fb242a09cb268382d9c6.pdf",
+    "static/media/spacexcert.png": "/static/media/spacexcert.7ea0e8e50de9e194f873.png",
+    "static/media/faysalcert.png": "/static/media/faysalcert.29b739f40046044937f5.png",
+    "static/media/r2.jpg": "/static/media/r2.c9615c55feb9e9bc43aa.jpg",
+    "static/media/Faysal.jpeg": "/static/media/Faysal.5befbda63fbf1ce319f0.jpeg",
+    "static/media/Raqamiintern.jpeg": "/static/media/Raqamiintern.5befbda63fbf1ce319f0.jpeg",
+    "static/media/focus first.jpg": "/static/media/focus first.f5ffd7c447f5f44eef59.jpg",
+    "static/media/smarttourism.jpg": "/static/media/smarttourism.610af91ed17d9bd238b0.jpg",
+    "static/media/flick.jpg": "/static/media/flick.19014f647e3e7415f3ed.jpg",
+    "static/media/phantomvisage.jpg": "/static/media/phantomvisage.39a22e9b59c15a14ff89.jpg",
+    "index.html": "/index.html",
+    "main.043dcced.css.map": "/static/css/main.043dcced.css.map",
+    "main.d99c06f8.js.map": "/static/js/main.d99c06f8.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.043dcced.css",
+    "static/js/main.d99c06f8.js"
+  ]
+}
