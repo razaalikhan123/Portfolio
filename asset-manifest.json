@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.043dcced.css",
-    "main.js": "/Portfolio/static/js/main.4ee58d27.js",
+    "main.css": "/Portfolio/static/css/main.a372a028.css",
+    "main.js": "/Portfolio/static/js/main.edb32b21.js",
     "static/js/453.ed3810f9.chunk.js": "/Portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/Raza-cv.pdf": "/Portfolio/static/media/Raza-cv.fb242a09cb268382d9c6.pdf",
     "static/media/spacexcert.png": "/Portfolio/static/media/spacexcert.7ea0e8e50de9e194f873.png",
     "static/media/faysalcert.png": "/Portfolio/static/media/faysalcert.29b739f40046044937f5.png",
-    "static/media/r2.jpg": "/Portfolio/static/media/r2.c9615c55feb9e9bc43aa.jpg",
     "static/media/Faysal.jpeg": "/Portfolio/static/media/Faysal.5befbda63fbf1ce319f0.jpeg",
     "static/media/Raqamiintern.jpeg": "/Portfolio/static/media/Raqamiintern.5befbda63fbf1ce319f0.jpeg",
     "static/media/focus first.jpg": "/Portfolio/static/media/focus first.f5ffd7c447f5f44eef59.jpg",
@@ -14,12 +13,12 @@
     "static/media/flick.jpg": "/Portfolio/static/media/flick.19014f647e3e7415f3ed.jpg",
     "static/media/phantomvisage.jpg": "/Portfolio/static/media/phantomvisage.39a22e9b59c15a14ff89.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.043dcced.css.map": "/Portfolio/static/css/main.043dcced.css.map",
-    "main.4ee58d27.js.map": "/Portfolio/static/js/main.4ee58d27.js.map",
+    "main.a372a028.css.map": "/Portfolio/static/css/main.a372a028.css.map",
+    "main.edb32b21.js.map": "/Portfolio/static/js/main.edb32b21.js.map",
     "453.ed3810f9.chunk.js.map": "/Portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.043dcced.css",
-    "static/js/main.4ee58d27.js"
+    "static/css/main.a372a028.css",
+    "static/js/main.edb32b21.js"
   ]
 }
