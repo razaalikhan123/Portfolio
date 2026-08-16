@@ -1,0 +1,124 @@
+#education {
+  padding: clamp(24px, 5vw, 40px) clamp(16px, 5vw, 40px);
+  position: relative;
+  z-index: 1;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 32px);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.education-container:hover {
+  border-color: rgba(97, 218, 251, 0.4);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+.education-row {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(14px, 4vw, 24px);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.education-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 8px;
+  box-shadow: 0 0 0 4px rgba(97, 218, 251, 0.14);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.education-row:hover .logo-container {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 0 0 6px rgba(97, 218, 251, 0.24);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.vertical-line {
+  width: 2px;
+  align-self: stretch;
+  background: linear-gradient(180deg, var(--color-primary), transparent);
+}
+
+.info-container {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  text-align: left;
+  padding-right: 90px;
+}
+
+.info-container h3 {
+  margin: 4px 0 6px;
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.info-container ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.info-container ul li {
+  margin: 6px 0;
+  font-size: 0.98rem;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .education-row {
+    flex-wrap: wrap;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .info-container {
+    padding-right: 0;
+    padding-top: 26px;
+  }
+
+  .date {
+    top: -22px;
+  }
+}

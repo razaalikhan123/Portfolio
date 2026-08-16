@@ -1,0 +1,83 @@
+/* src/components/ScrollIndicator.css */
+
+.scroll-indicator {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 900;
+}
+
+.indicator {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.indicator:hover,
+.indicator:focus-visible {
+  border-color: var(--color-primary);
+  transform: scale(1.25);
+}
+
+.indicator.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(97, 218, 251, 0.2);
+}
+
+.indicator-tooltip {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  background: rgba(10, 8, 24, 0.92);
+  border: 1px solid var(--color-border);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.indicator:hover .indicator-tooltip,
+.indicator:focus-visible .indicator-tooltip {
+  opacity: 1;
+}
+
+/* Keep the indicator out of the way on small screens where thumb-reach and
+   space are limited; primary navigation already covers section jumps. */
+@media (max-width: 700px) {
+  .scroll-indicator {
+    left: 8px;
+    gap: 10px;
+  }
+
+  .indicator {
+    width: 9px;
+    height: 9px;
+  }
+
+  .indicator-tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
