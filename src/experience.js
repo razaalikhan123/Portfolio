@@ -10,16 +10,10 @@ import Faysal from './Faysal.jpeg';
 
 const exp = [
   {
-    name: 'React Developer Intern @ XPSACE Technologies',
-    description: 'Developed responsive web applications using React.js and assisted with testing, debugging, and technical documentation.',
-    duration: 'May 2024 - July 2024',
-    image: spacexcert,
-  },
-  {
-    name: 'IT Governance, Risk & Compliance Intern @ Faysal Bank Limited',
-    description: 'Assisted in ISO/IEC 27001 implementation and PCI DSS compliance initiatives, supported technology risk assessments, and prepared audit evidence and control mapping for Internal Audit.',
-    duration: 'August 2024 - September 2024',
-    image: faysalcert,
+    name: 'IT Governance, Risk & Compliance Executive @ Faysal Bank Limited',
+    description: 'Coordinate enterprise-wide IT governance initiatives, support SBP technology assessments, perform technology risk assessments, review ITGC and governance processes, and coordinate Internal and External Audit engagements.',
+    duration: 'February 2026 - Present',
+    image: Faysal,
   },
   {
     name: 'Information Security Intern @ Raqami Islamic Digital Bank Limited',
@@ -28,11 +22,18 @@ const exp = [
     image: Raqamiintern,
   },
   {
-    name: 'IT Governance, Risk & Compliance Executive @ Faysal Bank Limited',
-    description: 'Coordinate enterprise-wide IT governance initiatives, support SBP technology assessments, perform technology risk assessments, review ITGC and governance processes, and coordinate Internal and External Audit engagements.',
-    duration: 'February 2026 - Present',
-    image: Faysal,
+    name: 'IT Governance, Risk & Compliance Intern @ Faysal Bank Limited',
+    description: 'Assisted in ISO/IEC 27001 implementation and PCI DSS compliance initiatives, supported technology risk assessments, and prepared audit evidence and control mapping for Internal Audit.',
+    duration: 'August 2024 - September 2024',
+    image: faysalcert,
   },
+  {
+    name: 'React Developer Intern @ XPSACE Technologies',
+    description: 'Developed responsive web applications using React.js and assisted with testing, debugging, and technical documentation.',
+    duration: 'May 2024 - July 2024',
+    image: spacexcert,
+  },
+
 ];
 
 const Experience = () => {

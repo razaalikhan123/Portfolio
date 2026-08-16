@@ -135,10 +135,14 @@
 @media (max-width: 900px) {
   .project-container,
   .project-container.odd {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 18px;
+    gap: -100px; /* Name aur card ke beech chhota gap */
     text-align: center;
+  }
+
+  .project-list {
+    gap: 100px; /* Different experiences ke beech bada gap */
   }
 
   .project-card {
@@ -149,7 +153,6 @@
     text-align: center;
   }
 }
-
 @media (max-width: 480px) {
   .project-info h3 {
     font-size: 1.15rem;
