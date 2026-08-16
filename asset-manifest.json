@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a372a028.css",
-    "main.js": "/Portfolio/static/js/main.edb32b21.js",
+    "main.css": "/Portfolio/static/css/main.03921a8b.css",
+    "main.js": "/Portfolio/static/js/main.a9623f31.js",
     "static/js/453.ed3810f9.chunk.js": "/Portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/Raza-cv.pdf": "/Portfolio/static/media/Raza-cv.fb242a09cb268382d9c6.pdf",
     "static/media/spacexcert.png": "/Portfolio/static/media/spacexcert.7ea0e8e50de9e194f873.png",
     "static/media/faysalcert.png": "/Portfolio/static/media/faysalcert.29b739f40046044937f5.png",
     "static/media/Faysal.jpeg": "/Portfolio/static/media/Faysal.5befbda63fbf1ce319f0.jpeg",
-    "static/media/Raqamiintern.jpeg": "/Portfolio/static/media/Raqamiintern.5befbda63fbf1ce319f0.jpeg",
     "static/media/focus first.jpg": "/Portfolio/static/media/focus first.f5ffd7c447f5f44eef59.jpg",
     "static/media/smarttourism.jpg": "/Portfolio/static/media/smarttourism.610af91ed17d9bd238b0.jpg",
     "static/media/flick.jpg": "/Portfolio/static/media/flick.19014f647e3e7415f3ed.jpg",
     "static/media/phantomvisage.jpg": "/Portfolio/static/media/phantomvisage.39a22e9b59c15a14ff89.jpg",
+    "static/media/Raqamiintern.jpeg": "/Portfolio/static/media/Raqamiintern.d8ef4ce1a69cb9560455.jpeg",
     "index.html": "/Portfolio/index.html",
-    "main.a372a028.css.map": "/Portfolio/static/css/main.a372a028.css.map",
-    "main.edb32b21.js.map": "/Portfolio/static/js/main.edb32b21.js.map",
+    "main.03921a8b.css.map": "/Portfolio/static/css/main.03921a8b.css.map",
+    "main.a9623f31.js.map": "/Portfolio/static/js/main.a9623f31.js.map",
     "453.ed3810f9.chunk.js.map": "/Portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a372a028.css",
-    "static/js/main.edb32b21.js"
+    "static/css/main.03921a8b.css",
+    "static/js/main.a9623f31.js"
   ]
 }
